@@ -1,0 +1,27 @@
+{
+  "description": "gifted-pair-code",
+  "main": "./gifted.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "pm2 start gifted.js --deep-monitoring --attach --name gifted",
+    "stop": "pm2 stop gifted",
+    "restart": "pm2 restart gifted"
+  },
+  "author": "Gifted Tech",
+  "license": "GPL-3.0 license",
+  "dependencies": {
+    "gifted-baileys": "^1.9.0",
+    "qrcode": "^1.5.4",
+    "awesome-phonenumber": "^6.4.0",
+    "megajs": "^1.3.1",
+    "pino": "^9.4.0",
+    "path": "^0.12.7",
+    "phone": "^3.1.53",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "pm2": "^5.4.2"
+  }
+}
